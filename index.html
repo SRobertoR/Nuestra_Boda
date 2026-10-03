@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda - Itzel Nallely & Irving Guillermo</title>
+
+    <!-- Fuentes de Google: Alex Brush (Cursiva), Cormorant Garamond (Serif elegancia), Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <main class="invitation-container">
+        
+
+        <!-- 1. SECCIÓN PORTADA Y REPRODUCTOR -->
+        <section class="section hero-section reveal-on-scroll">
+            <h1 class="header-title">Nuestra Boda</h1>
+
+            <!-- Marco Polaroid -->
+            <div class="polaroid-frame">
+                <div class="photo-container">
+                    <img src="img/Foto1.jpeg" alt="Itzel Nallely & Irving Guillermo" class="polaroid-photo">
+                </div>
+                <h2 class="couple-names">Itzel Nallely & Irving Guillermo</h2>
+            </div>
+
+            <!-- Fecha de la Boda -->
+            <br><div class="section-title-cursive"> Nuestra Canción</div>
+
+            <!-- Reproductor de Audio Minimalista -->
+            <div class="custom-player">
+                <audio id="bg-audio" src="Audio/Musica_Fondo.mp3" loop></audio>
+
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress-dot"></div>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <button type="button" class="btn-step" id="prev-btn" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                    </button>
+                    
+                    <button type="button" class="btn-play" id="play-btn" aria-label="Reproducir/Pausar">
+                        <svg id="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+
+                    <button type="button" class="btn-step" id="next-btn" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" transform="rotate(180 12 12)"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+ <p class="quote-text">Cada segundo nos acerca más a nuestro "sí".</p>
+        <!-- 2. SECCIÓN CUENTA REGRESIVA FIJA (STICKY) CON BOTÓN DE CALENDARIO -->
+        <section class="sticky-countdown-section reveal-on-scroll">
+            <div class="countdown-container">
+                <div class="count-box"><span id="days">00</span><label>DÍAS</label></div>
+                <div class="count-box"><span id="hours">00</span><label>HORAS</label></div>
+                <div class="count-box"><span id="minutes">00</span><label>MINUTOS</label></div>
+                <div class="count-box"><span id="seconds">00</span><label>SEGUNDOS</label></div>
+            </div>
+
+            <p class="countdown-date-text">Sábado, 17 de Octubre 2026</p>
+
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Itzel+Nallely+%26+Irving+Guillermo&dates=20261017T130000/20261017T230000&details=%C2%A1Te+esperamos+para+celebrar+nuestra+boda%21&location=Parroquia+Nuestra+Se%C3%B1ora+de+Guadalupe" 
+               target="_blank" 
+               class="btn-calendar-add">
+               🗓️ AGREGAR A MI CALENDARIO
+            </a>
+        </section>
+
+        <!-- Cita -->
+            <div class="ceremony-card reveal-on-scroll">
+                <!-- Pestaña / Borde decorativo superior -->
+                <div class="card-top-tab"></div>
+                
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-inner-content">
+                    <p class="venue-title"><strong>1 Juan 4:12</strong><br> "Si nos amamos unos a otros, Dios permanece en nosotros, y su amor se ha perfeccionado en nosotros."</p>
+                </div>
+            </div>
+
+        <!-- 3. PADRES Y PADRINOS -->
+        <section class="section reveal-on-scroll">
+            <div class="cream-card">
+                <div class="floral-divider">
+                    <img src="img/Divisor1.png" alt="Separador floral" class="floral-divider-img">
+                </div>
+                <h3 class="card-subtitle">CON EL AMOR DE NUESTROS PADRES</h3>
+                
+                <p class="names-text">
+                    Nallely Atilano V.<br>
+                    Luis Raúl Jiménez A.<br>
+                    <span class="ampersand">&</span><br>
+                    Erika Ruiz Maldonado<br>
+                    Fransisco de la Cruz M.
+                </p>
+
+                <p class="gratitude-text">
+                    A quienes agradecemos por su amor incondicional y por acompañarnos hasta este momento.
+                </p>
+
+                <div class="small-divider"><img src="img/Divisor2.png" alt="Separador floral" class="floral-divider-img"></div>
+
+                <h3 class="card-subtitle">NUESTROS PADRINOS</h3>
+                <p class="names-text">
+                    Rosalia Jiménez V.<br>
+                    <span class="ampersand">&</span><br>
+                    Miguel Angel Jiménez A.
+                </p>
+                <img src="img/Divisor1.png" alt="Separador floral" class="floral-divider-img">
+            </div>
+        </section>
+
+        <!-- 3. DETALLES Y CALENDARIO SUPERPUESTO -->
+        <section class="section reveal-on-scroll">
+            <h2 class="section-title-cursive">Queremos que seas parte de este día tan especial</h2>
+
+            <!-- Contenedor relativo para superponer foto y calendario -->
+            <div class="calendar-photo-wrapper">
+                
+                <!-- Foto estilo Polaroid -->
+                <div class="polaroid-frame photo-banner">
+                    <div class="photo-container">
+                        <img src="img/foto2.jpg" alt="Anillos de boda" class="polaroid-photo">
+                    </div>
+                </div>
+
+                <!-- Tarjeta del Calendario (Superpuesta) -->
+                <div class="cream-card calendar-card overlay-calendar">
+                    <h3 class="card-subtitle">OCTUBRE</h3>
+                    <div class="calendar-grid">
+                        <span class="day-header">DOM</span>
+                        <span class="day-header">LUN</span>
+                        <span class="day-header">MAR</span>
+                        <span class="day-header">MIÉ</span>
+                        <span class="day-header">JUE</span>
+                        <span class="day-header">VIE</span>
+                        <span class="day-header">SÁB</span>
+
+                        <!-- Octubre 2026 inicia en Jueves (4 celdas vacías) -->
+                        <span></span><span></span><span></span><span></span>
+                        
+                        <span>1</span><span>2</span><span>3</span>
+                        <span style="color: #2069bd;">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                        <span style="color: #2069bd;">11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+                        <!-- Día 17 con el círculo perfecto -->
+                        <span class="highlight-date">17</span>
+                        <span style="color: #2069bd;">18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+                        <span style="color: #2069bd;">25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tarjeta de Ceremonia Religiosa -->
+            <div class="ceremony-card reveal-on-scroll">
+                <!-- Pestaña / Borde decorativo superior -->
+                <div class="card-top-tab"></div>
+                
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-inner-content">
+                    <h3 class="title-cursive-card">Ceremonia Religiosa</h3>
+                    
+                    <div class="card-body-grid">
+                        <div class="card-illustration">
+                            <img src="IMG/iglesia.png" alt="Ilustración flor" class="flower-icon">
+                        </div>
+                        
+                        <div class="card-details">
+                            <p class="venue-title">
+                                PARROQUIA<br>
+                                NUESTRA SEÑORA DE GUADALUPE
+                            </p>
+                            <p class="venue-address">Av. Miguel Hidalgo 7, San Lucas, Iztapalapa, 09000 Ciudad de México, CDMX</p>
+                            <p class="time-text">4:45 PM</p>
+                            <a href="https://maps.app.goo.gl/amiFf9yZ9UwoPmA79" target="_blank" class="btn-outline">VER UBICACIÓN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- 4. RECEPCIÓN Y VESTIMENTA -->
+        <section class="section reveal-on-scroll">
+
+            <!-- Tarjeta de Recepción -->
+            <div class="ceremony-card">
+                <div class="card-top-tab"></div>
+                
+                <div class="card-inner-content">
+                    <h3 class="title-cursive-card">Recepción</h3>
+                    
+                    <div class="card-body-grid">
+                        <div class="card-illustration">
+                            <img src="IMG/recepcion.png" alt="Ilustración flor" class="flower-icon">
+                        </div>
+                        
+                        <div class="card-details">
+                            <p class="venue-title">
+                                Salón de Eventos<br>
+                                MR Diablo
+                            </p>
+                            <p class="venue-address">11 de Agosto de 1859, Leyes de Reforma 3ra Secc, Iztapalapa, 09310 Ciudad de México, CDMX</p>
+                            <p class="time-text">7:00 PM</p>
+                            <a href="https://maps.app.goo.gl/aXQNCYES7Kbri8J28" target="_blank" class="btn-outline">VER UBICACIÓN</a>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <!-- Tarjeta de Código de Vestimenta -->
+            <div class="ceremony-card reveal-on-scroll">
+                <div class="card-top-tab"></div>
+                
+                <div class="card-inner-content">
+                    <h3 class="title-cursive-card">Codigo de Vestimenta</h3>
+                    
+                    <div class="card-body-grid">
+                        <div class="card-illustration">
+                            <img src="IMG/codigoVestimenta.png" alt="Ilustración flor" class="flower-icon">
+                        </div>
+                        
+                        <div class="card-details">
+                            <p class="dress-info">FORMAL</p>
+                            <p class="sub-text">SE RESERVAN COLORES BLANCO, BEIGE Y ROJO EN MUJERES Y COLOR ROSA, EN HOMBRES</p>
+                            <p class="dress-info">ESTOS COLORES SERAN EXPLUSIVOS DE LOS NOVIOS</p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+        </section>
+
+        <!-- 5. GALERÍA / CARRUSEL -->
+        <section class="section reveal-on-scroll">
+             <p class="quote-text">Queremos que nos acompañes y pases a ser parte de nuestra historia.</p>
+            <div class="polaroid-frame">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <div class="carousel-slide"><img src="IMG/Foto1.jpeg" alt="Foto 1"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto2.jpg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto3.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto4.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto5.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto6.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto7.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto8.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto9.jpeg" alt="Foto 3"></div>
+                        <div class="carousel-slide"><img src="IMG/Foto10.jpeg" alt="Foto 2"></div>
+                    </div>
+                    <button type="button" class="carousel-prev" id="prevBtn">&#10094;</button>
+                    <button type="button" class="carousel-next" id="nextBtn">&#10095;</button>
+                </div>
+                <h2 class="couple-names" style="margin-top: 15px;">Nuestro amor nos llevó hasta aquí.</h2>
+            </div>
+        </section>
+
+        <!-- 6. REGALOS Y CONFIRMACIÓN -->
+        <section class="section reveal-on-scroll">
+            <p class="quote-text">Cada parte es muy importante.</p>
+
+            <div class="cream-card">
+                <div class="floral-divider">
+                    <img src="img/Divisor1.png" alt="Separador floral" class="floral-divider-img">
+                </div>
+                <h3 class="title-cursive-card">Mesa de Regalos</h3>
+                <p class="gratitude-text">TU PRESENCIA EN NUESTRA BODA SERÁ SIEMPRE NUESTRO MEJOR REGALO. SI DESEAS TENER UN DETALLE CON NOSOTROS, SERÁ RECIBIDO CON TODO NUESTRO CARIÑO.</p>
+                <div class="gift-icon">
+                    <img src="IMG/regalo.png" alt="Separador floral" class="floral-divider-img">
+                </div>
+                <div class="floral-divider">
+                    <img src="img/Divisor1.png" alt="Separador floral" class="floral-divider-img">
+                </div>
+            </div>
+            <div class="rsvp-container">
+                <br><h3 class="section-title-cursive">Confirma tu asistencia.</h3>
+                <a href="https://wa.me/5537315063?text=%C2%A1Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Irving%20y%20Itzel.%0AN%C3%BAmero%20de%20asistentes%3A%20" target="_blank" class="btn-solid">Confirma tu asistencia.</a>
+            </div>
+        </section>
+    
+    
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer reveal-on-scroll">
+        <div class="footer-content">
+            <div class="footer-monogram">I & I</div> <!-- Cambia por las iniciales de los novios -->
+            <p class="footer-text">¡Gracias por acompañarnos en este día tan especial!</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 — SRobertoR.</p>
+        </div>
+    </footer>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
